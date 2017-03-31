@@ -4,7 +4,7 @@ Inispried by [Facebook content placeholder deconstruction](http://cloudcannon.co
 
 ## Get stared
 
-Here is DEMO.
+Here is [DEMO](https://stevenyuysy.github.io/vue-content-placeholder/).
 
 ```
 npm install vue-content-placeholder
