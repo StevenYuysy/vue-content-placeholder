@@ -16,11 +16,25 @@ Then in your Vuejs file:
 import 'ContentPlaceholder' from 'vue-content-placeholder'
 ```
 
+## How it work?
+
+You can check out the article above. The differnce is that I use the property of `flex` instead of `absolute` in every row.
+
+The boxes can be custom height and custom width, you can choose a fixed height with `px`, or just use Number to declare its `flex-basis` or use `%`, `em` ...
+
 ## Option
 
-- height
 
-- boxes
+| Options | type | discription|
+| -- | -- | -- |
+| rows | Array  | The property of the component |
+| row  | Object | The element of the rows |
+| row.height | String | The height of the row, support `px`, `rem`, `em`, `%` |
+| row.boxes | Array | The transition boxes of the row |
+| box | Array | The box in the row.boxes |
+| box[0] | String `||` Number | To declare the width of the left gutter |
+| box[1] | String `||` Number | To declare the width of the box |
+
 
 ## Contribution
 
