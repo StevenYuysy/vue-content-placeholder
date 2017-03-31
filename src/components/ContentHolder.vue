@@ -45,7 +45,6 @@ export default {
 .container {
   margin-right: auto;
   margin-left: auto;
-  height: 500px;
   padding: 1rem;
 }
 
