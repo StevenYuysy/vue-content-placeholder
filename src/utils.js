@@ -1,5 +1,3 @@
-const DEFAULT_HEIGHT = '1rem'
-
 function isFlexBasis (str) {
   return Number(str) !== NaN
 }
@@ -46,7 +44,6 @@ function formatRows (rows) {
     let boxArr = []
     let rowObj = {}
     // Add height
-    if (!row.height) row.height = DEFAULT_HEIGHT
     rowObj.height = row.height
     // Add style
     row.boxes.forEach((box, index) => {
