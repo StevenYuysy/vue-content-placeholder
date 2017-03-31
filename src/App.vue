@@ -42,25 +42,22 @@ export default {
           height: '25px',
           boxes:[[0, '100px'], ['10%', 2]]
         },
-        {
+        { height: '2rem',
           boxes: [[0, 0]]
         },
-        {
-          boxes: [[0, 0]]
-        },
-        {
+        { height: '1rem',
           boxes: [[0, 5]]
         },
-        {
+        { height: '1rem',
           boxes: [[0, 0]]
         },
-        {
+        { height: '1rem',
           boxes: [[0, '50%']]
         },
-        {
+        { height: '1rem',
           boxes: [[0, 0]]
         },
-        {
+        { height: '1rem',
           boxes: [[0, '10em']]
         }
       ]
@@ -84,7 +81,4 @@ export default {
 </script>
 
 <style>
-.action-container {
-  
-}
 </style>
