@@ -1,16 +1,18 @@
 <template>
   <div>
-    <h1>{{ msg }}</h1>
     <content-holder :rows="rows"></content-holder>
     <button @click="addRow">Add row</button>
-    <div v-for="(row, rowIndex) in rows">
-      <h1>row {{rowIndex}}</h1>
-      <label>height</label><input type="text" v-model="row.height">
-      <div v-for="(box, boxIndex) in row.boxes">
-        <button @click="addBox(boxIndex)">Add box</button>
-        <h2>box {{boxIndex}}</h2>
-        <label>boxes leftGutter</label><input type="text" v-model="box[0]">
-        <label>boxes width</label><input type="text" v-model="box[1]">
+    <button @click="addWhiteRow">Add white row</button>
+    <div class="action-container">
+      <div v-for="(row, rowIndex) in rows">
+        <span>row {{rowIndex}}</span>
+        <label>height</label><input type="text" v-model="row.height">
+        <button @click="addBox(rowIndex)">Add box</button>
+        <div v-for="(box, boxIndex) in row.boxes">
+          <span>box {{boxIndex}}</span>
+          <label>boxes leftGutter</label><input type="text" v-model="box[0]">
+          <label>boxes width</label><input type="text" v-model="box[1]">
+        </div>
       </div>
     </div>
   </div>
@@ -23,7 +25,6 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'hello world',
       rows: [
         {
           height: '25px', 
@@ -31,7 +32,7 @@ export default {
         },
         {
           height: '25px',
-          boxes:[[0, '100px'], [1, 1]]
+          boxes:[[0, '100px'], ['10%', 1]]
         },
         {
           height: '25px', 
@@ -39,7 +40,7 @@ export default {
         },
         {
           height: '25px',
-          boxes:[[0, '100px'], [1, 2]]
+          boxes:[[0, '100px'], ['10%', 2]]
         },
         {
           boxes: [[0, 0]]
@@ -48,7 +49,7 @@ export default {
           boxes: [[0, 0]]
         },
         {
-          boxes: [[1, 5]]
+          boxes: [[0, 5]]
         },
         {
           boxes: [[0, 0]]
@@ -60,7 +61,7 @@ export default {
           boxes: [[0, 0]]
         },
         {
-          boxes: [[0, '10rem']]
+          boxes: [[0, '10em']]
         }
       ]
     }
@@ -73,6 +74,9 @@ export default {
       this.rows[index].boxes.push([1, 1])
     },
     addRow () {
+      this.rows.push({boxes: [[0, 1]]})
+    },
+    addWhiteRow () {
       this.rows.push({boxes: [[0, 0]]})
     }
   }
@@ -80,5 +84,7 @@ export default {
 </script>
 
 <style>
-
+.action-container {
+  
+}
 </style>
