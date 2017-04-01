@@ -1,24 +1,22 @@
-function isFlexBasis (str) {
-  return Number(str) !== NaN
+function isFlexBasis(str) {
+  return Number(str).toString() === str.toString()
 }
 
-function isWidth (str) {
+function isWidth(str) {
   const cssSuffix = ['px', '%', 'em', 'rem']
   let checkState = false
   cssSuffix.forEach(suffix => {
-    if (Number(str.split(suffix)[0]) !== NaN 
-      && str.split(suffix)[1] === ''
-      && str.split(suffix).length === 2) {
+    if (Number(str.split(suffix)[0]) &&
+    str.split(suffix)[1] === '' &&
+    str.split(suffix).length === 2) {
       checkState = true
-      return
     }
   })
   return checkState
 }
 
-function getBoxStyle (left, width, last) {
-  let arr =[]
-  // check option
+function getBoxStyle(left, width, last) {
+  const arr = []
   if (left !== 0) {
     if (isFlexBasis(width)) {
       arr.push({style: `flex: ${left} 0 0`, subClass: 'box'})
@@ -26,7 +24,6 @@ function getBoxStyle (left, width, last) {
       arr.push({style: `flex: 0 0 ${left}`, subClass: 'box'})
     }
   }
-  // return only one object
   if (isFlexBasis(width)) {
     arr.push({style: `flex: ${width} 0 0`})
   } else if (isWidth(width)) {
@@ -38,11 +35,11 @@ function getBoxStyle (left, width, last) {
   return arr
 }
 
-function formatRows (rows) {
-  let rowArr = []
+function formatRows(rows) {
+  const rowArr = []
   rows.forEach(row => {
     let boxArr = []
-    let rowObj = {}
+    const rowObj = {}
     // Add height
     rowObj.height = row.height
     // Add style
@@ -59,4 +56,9 @@ function formatRows (rows) {
   return rowArr
 }
 
-export default formatRows
+module.exports = {
+  isFlexBasis,
+  isWidth,
+  getBoxStyle,
+  formatRows
+}
