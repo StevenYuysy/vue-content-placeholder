@@ -5,12 +5,14 @@
   "author": "steven.yu <stevenyuysy@gmail.com>",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "test": "xo && ava"
   },
   "dependencies": {
     "vue": "^2.2.1"
   },
   "devDependencies": {
+    "ava": "^0.18.2",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-preset-latest": "^6.0.0",
@@ -20,6 +22,11 @@
     "vue-loader": "^11.1.4",
     "vue-template-compiler": "^2.2.1",
     "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.2.0"
+    "webpack-dev-server": "^2.2.0",
+    "xo": "^0.18.1"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
   }
 }

@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import formateRows from '../utils.js'
+import { formateRows } from '../utils.js'
 
 export default {
   data () {
