@@ -1,6 +1,6 @@
 # vue-content-placeholder
 
-Inispried by [Facebook content placeholder deconstruction](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)
+Inspired by [Facebook content placeholder deconstruction](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)
 
 ## Get stared
 
@@ -18,7 +18,7 @@ import 'ContentPlaceholder' from 'vue-content-placeholder'
 
 ## How it work?
 
-You can check out the article above. The differnce is that I use the property of `flex` instead of `absolute` in every row.
+You can check out the article above. The difference is that I use the property of `flex` instead of `absolute` in every row.
 
 The boxes can be custom height and custom width, you can choose a fixed height with `px`, or just use Number to declare its `flex-basis` or use `%`, `em` ...
 
