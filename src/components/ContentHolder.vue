@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { formateRows } from '../utils.js'
+import { formatRows } from '../utils.js'
 
 export default {
   data () {
@@ -26,7 +26,7 @@ export default {
   },
   computed: {
     formatedRows () {
-      return formateRows(this.rows)
+      return formatRows(this.rows)
     }
   }
 }
