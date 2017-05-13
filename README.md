@@ -6,6 +6,8 @@ Inspired by [Facebook content placeholder deconstruction](http://cloudcannon.com
 
 Here is [DEMO](https://stevenyuysy.github.io/vue-content-placeholder/).
 
+![](demo.gif)
+
 ```
 npm install vue-content-placeholder
 ```
@@ -22,8 +24,40 @@ You can check out the article above. The difference is that I use the property o
 
 The boxes can be custom height and custom width, you can choose a fixed height with `px`, or just use Number to declare its `flex-basis` or use `%`, `em` ...
 
-## Option
+### Import
 
+#### ES6
+
+```js
+/* in xxx.vue */
+
+import ContentPlacehlder from 'vue-content-placeholder/dist/ContentPlaceholder.vue'
+
+export default {
+  ...
+  components: {
+    ContentPlaceholder
+  },
+  ...
+}
+```
+
+#### ES5
+
+```js
+var Vue = require('vue')
+var ContentPlacehlder = require('vue-content-placehlder')
+
+var YourComponent = Vue.extend({
+  ...
+  components: {
+    'content-placehlder': ContentPlacehlder.default
+  },
+  ...
+})
+```
+
+## Option
 
 | Options | type | discription|
 | -- | -- | -- |
