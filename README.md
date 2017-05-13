@@ -8,16 +8,6 @@ Here is [DEMO](https://stevenyuysy.github.io/vue-content-placeholder/).
 
 ![](demo.gif)
 
-```
-npm install vue-content-placeholder
-```
-
-Then in your Vuejs file:
-
-```JavaScript
-import 'ContentPlaceholder' from 'vue-content-placeholder'
-```
-
 ## How it work?
 
 You can check out the article above. The difference is that I use the property of `flex` instead of `absolute` in every row.
