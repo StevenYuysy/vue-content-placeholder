@@ -18,19 +18,19 @@ function isWidth(str) {
 function getBoxStyle(left, width, last) {
   const arr = []
   if (left !== 0) {
-    if (isFlexBasis(width)) {
-      arr.push({style: `flex: ${left} 0 0`, subClass: 'box'})
-    } else if (isWidth(width)) {
-      arr.push({style: `flex: 0 0 ${left}`, subClass: 'box'})
+    if (isFlexBasis(left)) {
+      arr.push({style: `flex-grow: ${left}; flex-shrink: 0; flex-basis: 0;`, subClass: 'box'})
+    } else if (isWidth(left)) {
+      arr.push({style: `flex-grow: 0; flex-shrink: 0; flex-basis: ${left};`, subClass: 'box'})
     }
   }
   if (isFlexBasis(width)) {
-    arr.push({style: `flex: ${width} 0 0`})
+    arr.push({style: `flex-grow: ${width}; flex-shrink: 0; flex-basis: 0;`})
   } else if (isWidth(width)) {
-    arr.push({style: `flex: 0 0 ${width}`})
+    arr.push({style: `flex-grow: 0; flex-shrink: 0; flex-basis: ${width};`})
   }
   if (last) {
-    arr.push({style: 'flex: 1 0 0', subClass: 'box'})
+    arr.push({style: 'flex-grow: 1; flex-shrink: 0; flex-basis: 0;', subClass: 'box'})
   }
   return arr
 }
