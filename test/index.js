@@ -61,7 +61,7 @@ test('no left get BoxStyle', t => {
     width: 1
   }
   t.deepEqual(utils.getBoxStyle(boxOption.left, boxOption.width),
-  [{style: 'flex: 1 0 0'}])
+  [{style: 'flex-grow: 1; flex-shrink: 0; flex-basis: 0;'}])
 })
 
 test('with left get BoxStyle', t => {
@@ -71,8 +71,8 @@ test('with left get BoxStyle', t => {
   }
   t.deepEqual(utils.getBoxStyle(boxOption.left, boxOption.width),
     [
-      {style: 'flex: 1 0 0', subClass: 'box'},
-      {style: 'flex: 1 0 0'}
+      {style: 'flex-grow: 1; flex-shrink: 0; flex-basis: 0;', subClass: 'box'},
+      {style: 'flex-grow: 1; flex-shrink: 0; flex-basis: 0;'}
     ])
 })
 
@@ -84,8 +84,8 @@ test('with last get BoxStyle', t => {
   }
   t.deepEqual(utils.getBoxStyle(boxOption.left, boxOption.width, boxOption.last),
     [
-      {style: 'flex: 1 0 0', subClass: 'box'},
-      {style: 'flex: 1 0 0'},
-      {style: 'flex: 1 0 0', subClass: 'box'}
+      {style: 'flex-grow: 1; flex-shrink: 0; flex-basis: 0;', subClass: 'box'},
+      {style: 'flex-grow: 1; flex-shrink: 0; flex-basis: 0;'},
+      {style: 'flex-grow: 1; flex-shrink: 0; flex-basis: 0;', subClass: 'box'}
     ])
 })
