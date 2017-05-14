@@ -8,7 +8,7 @@ Here is [DEMO](https://stevenyuysy.github.io/vue-content-placeholder/).
 
 ![](demo.gif)
 
-## How it work?
+## How does it work?
 
 You can check out the article above. The difference is that I use the property of `flex` instead of `absolute` in every row.
 
@@ -21,7 +21,7 @@ The boxes can be custom height and custom width, you can choose a fixed height w
 ```js
 /* in xxx.vue */
 
-import ContentPlacehlder from 'vue-content-placeholder/dist/ContentPlaceholder.vue'
+import ContentPlacehlder from 'vue-content-placeholder'
 
 export default {
   ...
@@ -41,8 +41,7 @@ var ContentPlacehlder = require('vue-content-placehlder')
 var YourComponent = Vue.extend({
   ...
   components: {
-    'content-placehlder': ContentPlacehlder.default
-  },
+    ContentPlacehlder
   ...
 })
 ```
@@ -56,8 +55,8 @@ var YourComponent = Vue.extend({
 | row.height | String | The height of the row, support `px`, `rem`, `em`, `%` |
 | row.boxes | Array | The transition boxes of the row |
 | box | Array | The box in the row.boxes |
-| box[0] | String `||` Number | To declare the width of the left gutter |
-| box[1] | String `||` Number | To declare the width of the box |
+| box[0] | String or Number | To declare the width of the left gutter |
+| box[1] | String or Number | To declare the width of the box |
 
 
 ## Contribution
