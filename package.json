@@ -1,7 +1,7 @@
 {
   "name": "vue-content-placeholder",
   "description": "A Vue.js project",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "steven.yu <stevenyuysy@gmail.com>",
   "scripts": {
     "build": "webpack --progress --hide-modules",
