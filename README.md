@@ -36,12 +36,12 @@ export default {
 
 ```js
 var Vue = require('vue')
-var ContentPlacehlder = require('vue-content-placehlder')
+var ContentPlacehlder = require('vue-content-placeholder')
 
 var YourComponent = Vue.extend({
   ...
   components: {
-    ContentPlacehlder
+    ContentPlaceholder
   ...
 })
 ```
