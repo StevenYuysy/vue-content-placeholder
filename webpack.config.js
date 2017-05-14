@@ -2,11 +2,12 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/',
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'build.js'
+    path: path.resolve(__dirname, './dist/'),
+    filename: 'index.js',
+    library: 'ContentPlaceholder',
+    libraryTarget: 'commonjs2'
   },
   module: {
     rules: [
