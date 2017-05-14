@@ -1,5 +1,5 @@
-const path = require('path')
-const webpack = require('webpack')
+var path = require('path')
+var webpack = require('webpack')
 
 module.exports = {
   entry: './src/main.js',
@@ -16,6 +16,7 @@ module.exports = {
         options: {
           loaders: {
           }
+          // other vue-loader options go here
         }
       },
       {
@@ -33,6 +34,9 @@ module.exports = {
     ]
   },
   resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    }
   },
   devServer: {
     historyApiFallback: true,
