@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import ContentPlaceholder from 'vue-content-placeholder/dist/ContentPlaceholder.vue'
+import ContentPlaceholder from 'vue-content-placeholder'
 import Github from './Github.vue'
 
 export default {
