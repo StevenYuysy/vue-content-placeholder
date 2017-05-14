@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "vue": "^2.2.1",
-    "vue-content-placeholder": "^1.0.4"
+    "vue-content-placeholder": "^1.0.5"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
