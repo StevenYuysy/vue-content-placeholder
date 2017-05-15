@@ -23,7 +23,7 @@ The boxes can be custom height and custom width, you can choose a fixed height w
 ```js
 /* in xxx.vue */
 
-import ContentPlacehlder from 'vue-content-placeholder'
+import ContentPlaceholder from 'vue-content-placeholder'
 
 export default {
   ...
@@ -38,7 +38,7 @@ export default {
 
 ```js
 var Vue = require('vue')
-var ContentPlacehlder = require('vue-content-placeholder')
+var ContentPlaceholder = require('vue-content-placeholder')
 
 var YourComponent = Vue.extend({
   ...
