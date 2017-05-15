@@ -1,5 +1,7 @@
 # vue-content-placeholder
 
+![travis-ci](https://img.shields.io/travis/StevenYuysy/vue-content-placeholder.svg)
+
 Inspired by [Facebook content placeholder deconstruction](http://cloudcannon.com/deconstructions/2014/11/15/facebook-content-placeholder-deconstruction.html)
 
 ## Get stared
