@@ -16,36 +16,63 @@ You can check out the article above. The difference is that I use the property o
 
 The boxes can be custom height and custom width, you can choose a fixed height with `px`, or just use Number to declare its `flex-basis` or use `%`, `em` ...
 
-### Import
+### How to use?
 
 #### ES6
 
 ```js
 /* in xxx.vue */
+<content-placeholder :rows="placeholderRows"></content-placeholder>
 
 import ContentPlacehlder from 'vue-content-placeholder'
 
 export default {
   ...
+  data () {
+    return {
+      placeholderRows:  [
+        {
+          height: '25px',
+          boxes: [[0, '100px']]
+        },
+        {
+          height: '25px',
+          boxes:[[0, '100px'], ['10%', 1]]
+        },
+        {
+          height: '25px',
+          boxes: [[0, '100px']]
+        },
+        {
+          height: '25px',
+          boxes:[[0, '100px'], ['10%', 2]]
+        },
+        { height: '2rem',
+          boxes: [[0, 0]]
+        },
+        { height: '1rem',
+          boxes: [[0, 5]]
+        },
+        { height: '1rem',
+          boxes: [[0, 0]]
+        },
+        { height: '1rem',
+          boxes: [[0, '50%']]
+        },
+        { height: '1rem',
+          boxes: [[0, 0]]
+        },
+        { height: '1rem',
+          boxes: [[0, '10em']]
+        }
+      ]
+    }
+  },
   components: {
     ContentPlaceholder
   },
   ...
 }
-```
-
-#### ES5
-
-```js
-var Vue = require('vue')
-var ContentPlacehlder = require('vue-content-placeholder')
-
-var YourComponent = Vue.extend({
-  ...
-  components: {
-    ContentPlaceholder
-  ...
-})
 ```
 
 ## Option
