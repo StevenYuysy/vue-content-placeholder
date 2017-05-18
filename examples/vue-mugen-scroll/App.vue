@@ -26,7 +26,7 @@
   import http from 'axios'
   import ContentPlaceholder from 'dist/vue-content-placeholder.min.js'
   import MugenScroll from 'vue-mugen-scroll'
-  import Github from '../Github.vue'
+  import Github from '../utils/Github.vue'
 
   const ROWS = [
     {
