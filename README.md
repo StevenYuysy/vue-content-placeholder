@@ -24,7 +24,7 @@ The boxes can be custom height and custom width, you can choose a fixed height w
 /* in xxx.vue */
 <content-placeholder :rows="placeholderRows"></content-placeholder>
 
-import ContentPlacehlder from 'vue-content-placeholder'
+import ContentPlaceholder from 'vue-content-placeholder'
 
 export default {
   ...
