@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-  entry: '../src/',
+  entry: './src/',
   output: {
     path: path.resolve(__dirname, '../dist/'),
     filename: 'vue-content-placeholder.min.js',
