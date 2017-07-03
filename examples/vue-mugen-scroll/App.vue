@@ -14,7 +14,9 @@
         :handler="fetchUsers"
         :should-handle="!loading"
         scroll-container="scrollContainer">
-        <content-placeholder :rows="placeholderRows"></content-placeholder>
+        <div class="container">
+          <content-placeholder :rows="placeholderRows" size="900px"></content-placeholder>
+        </div>
       </mugen-scroll>
     </div>
 
@@ -112,5 +114,10 @@
     height: 300px;
     margin: 0 auto;
     overflow-y: auto;
+  }
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
   }
 </style>

@@ -1,10 +1,8 @@
 <template>
-  <div class="container">
-    <div class="animated-background">
-      <div class="row" :style="{height: row.height}" v-for="row in formatedRows">
-        <div :style="box.style" v-for="box in row.boxes">
-          <div v-if="box.subClass" :class="box.subClass"></div>
-        </div>
+  <div class="animated-background" :style="{backgroundSize: size}">
+    <div class="row" :style="{height: row.height}" v-for="row in formatedRows">
+      <div :style="box.style" v-for="box in row.boxes">
+        <div v-if="box.subClass" :class="box.subClass"></div>
       </div>
     </div>
   </div>
@@ -22,6 +20,10 @@ export default {
     rows: {
       type: Array,
       required: true
+    },
+    size: {
+      type: String,
+      default: '250%'
     }
   },
   computed: {
@@ -42,12 +44,6 @@ export default {
   overflow: hidden;
 }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding: 1rem;
-}
-
 .row{
   width: 100%;
   box-sizing: border-box;
@@ -59,10 +55,10 @@ export default {
 
 @keyframes placeHolderShimmer{
   0%{
-    background-position: -400px 0
+    background-position: 100% 0
   }
   100%{
-    background-position: 450px 0
+    background-position: -100% 0
   }
 }
 
@@ -74,7 +70,6 @@ export default {
   animation-timing-function: linear;
   background: #f6f7f8;
   background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
-  background-size: 800px 104px;
   position: relative;
 }
 </style>

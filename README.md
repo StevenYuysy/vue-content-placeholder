@@ -86,6 +86,7 @@ export default {
 | box | Array | The box in the row.boxes |
 | box[0] | String or Number | To declare the width of the left gutter |
 | box[1] | String or Number | To declare the width of the box |
+| size | String | Control the animation, such as 250% or 900px |
 
 
 ## Contribution
