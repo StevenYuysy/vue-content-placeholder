@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config config/webpack.lib.conf.js --progress --hide-modules",
     "examples": "webpack --config config/webpack.example.conf.js --progress --hide-modules",
-    "test": "xo && ava"
+    "test": "xo && ava test/*.spec.js"
   },
   "devDependencies": {
     "ava": "^0.18.2",
