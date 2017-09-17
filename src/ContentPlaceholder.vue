@@ -1,6 +1,6 @@
 <template>
   <div class="animated-background" :style="{backgroundSize: size}">
-    <div class="row" :style="{height: row.height}" v-for="row in formatedRows">
+    <div class="row" :style="{height: row.height}" v-for="row in formattedRows">
       <div :style="box.style" v-for="box in row.boxes">
         <div v-if="box.subClass" :class="box.subClass"></div>
       </div>
@@ -27,7 +27,7 @@ export default {
     }
   },
   computed: {
-    formatedRows () {
+    formattedRows () {
       return formatRows(this.rows)
     }
   }
