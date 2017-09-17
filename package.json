@@ -20,10 +20,10 @@
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
-    "vue": "^2.2.1",
+    "vue": "^2.4.1",
     "vue-loader": "^11.1.4",
     "vue-mugen-scroll": "^0.2.4",
-    "vue-template-compiler": "^2.2.1",
+    "vue-template-compiler": "^2.4.1",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.2.0",
     "xo": "^0.18.1"
